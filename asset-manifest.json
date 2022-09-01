@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Blockchain_based_Real_Estate_System/static/css/main.1f8dc256.chunk.css",
+    "main.js": "/Blockchain_based_Real_Estate_System/static/js/main.e0a41e76.chunk.js",
+    "main.js.map": "/Blockchain_based_Real_Estate_System/static/js/main.e0a41e76.chunk.js.map",
+    "runtime-main.js": "/Blockchain_based_Real_Estate_System/static/js/runtime-main.0b928882.js",
+    "runtime-main.js.map": "/Blockchain_based_Real_Estate_System/static/js/runtime-main.0b928882.js.map",
+    "static/js/2.23177220.chunk.js": "/Blockchain_based_Real_Estate_System/static/js/2.23177220.chunk.js",
+    "static/js/2.23177220.chunk.js.map": "/Blockchain_based_Real_Estate_System/static/js/2.23177220.chunk.js.map",
+    "static/js/3.6d36d8f4.chunk.js": "/Blockchain_based_Real_Estate_System/static/js/3.6d36d8f4.chunk.js",
+    "static/js/3.6d36d8f4.chunk.js.map": "/Blockchain_based_Real_Estate_System/static/js/3.6d36d8f4.chunk.js.map",
+    "index.html": "/Blockchain_based_Real_Estate_System/index.html",
+    "static/css/main.1f8dc256.chunk.css.map": "/Blockchain_based_Real_Estate_System/static/css/main.1f8dc256.chunk.css.map",
+    "static/js/2.23177220.chunk.js.LICENSE.txt": "/Blockchain_based_Real_Estate_System/static/js/2.23177220.chunk.js.LICENSE.txt",
+    "static/media/emblem.4550b548.svg": "/Blockchain_based_Real_Estate_System/static/media/emblem.4550b548.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0b928882.js",
+    "static/js/2.23177220.chunk.js",
+    "static/css/main.1f8dc256.chunk.css",
+    "static/js/main.e0a41e76.chunk.js"
+  ]
+}
