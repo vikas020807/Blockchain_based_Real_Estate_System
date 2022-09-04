@@ -44,7 +44,8 @@ module.exports = {
       network_id: 80001,
       confirmations: 2,
       timeoutBlocks: 200,
-      skipDryRun: true
+      skipDryRun: true,
+      networkCheckTimeout: 1000000
     }
     // Another network with more advanced options...
     // advanced: {
