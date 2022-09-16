@@ -1,6 +1,23 @@
+/*.App{
+    background-color: springgreen;
+}*/
+body{
+    background: #c2e59c;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #64b3f4, #c2e59c);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #64b3f4, #c2e59c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
 .emblem{
-    width: 5rem;
-    padding-right: 2rem;
+    width: 7rem;
+    height: 6rem;
+    /* padding-right: 2rem; */
+    
+}
+.emblem-{
+    width: 7rem;
+    height: 6rem;
+    /* padding-right: 2rem; */
+    
 }
 
 .landingPage-heading-div{
@@ -9,25 +26,67 @@
     align-items: center;
     margin-top: 2rem;
 }
-
+.title{
+   text-align: center;
+   /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+}
+.welcome-box{
+   /* margin-left: 50%;*/
+   margin: auto;
+   max-width: 30rem;
+}
 .landingPage-btn, .update-btn{
-    padding: 1rem 6rem;
-    margin-top: 4rem;
-    font-size: 1rem;
-    border-radius: 10px;
+    padding: 1rem 4rem;
+    font-size: 1.1rem;
+    border-radius: 12px;
     outline: none !important;
     border: none !important;
-    background-color: rgb(28, 199, 28);
+    background-color: #2286b0;
     color: white;
     cursor: pointer;
     font-weight: 600;
+    /**/
+    border-style: outset;
+    margin: auto;
+    /* -webkit-box-shadow: 12px 10px 22px -10px rgba(52,60,61,1);
+    -moz-box-shadow: 12px 10px 22px -10px rgba(52,60,61,1);
+    box-shadow: 12px 10px 22px -10px rgba(52,60,61,1); */
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    
 }
+.button-container-div{
+   display: flex;
+   padding-top: 7%;
 
+}
 .welcome-p{
     margin-top: 5rem;
     font-size: 2.4rem;
-    width: 50%;
+    width: 90%;
+    text-align: center;
+    
 }
+/****************Animation**********************/
+/* .welcome-p {
+    overflow: hidden;
+    border-right: .15em solid rgb(70, 70, 70);
+    white-space: nowrap;
+    animation: typing 2.5s steps(20, end) infinite, blinking .8s infinite;
+    font-size: 2.6rem;
+    width: 0;
+  }
+ 
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  @keyframes blinking {
+    from { border-color: transparent}
+    to { border-color: rgb(70, 70, 70)}
+  }  */
+
+/************************************/
+
 
 /* small devices */
 @media screen and (max-width: 400px){

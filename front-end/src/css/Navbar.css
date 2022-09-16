@@ -1,5 +1,24 @@
+.emblem{
+    animation: rotation 3s infinite ;
+} 
+    @keyframes rotation {
+        from {
+        transform: rotate(0deg);
+        }
+        to {
+        transform: rotate(360deg);
+        }
+    }
+
+
+  
+
 .navbar{
     padding: 1rem 4rem;
+    background: #c2e59c;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #64b3f4, #c2e59c);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #64b3f4, #c2f78a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 .nav-item{
@@ -7,8 +26,10 @@
 }
 
 .active{
-    font-weight: 500;
+    font-weight: 600;
 }
+
+
 
 @media screen and (max-width: 400px){
     .navbar{

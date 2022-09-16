@@ -14,7 +14,7 @@ const DisplayExploreResult = (props) => {
 
             {(props.available) ? 
               ((props.isAdmin || props.isOwner) ?
-                <button className='marked-sale'><b>Marked for sale</b></button>
+                <button className='marked-sale'><b>Available for sale</b></button>
                 :
                 ((props.didIRequested) ? 
                   <button className='req-pending'><b>Request Pending</b></button>
@@ -28,7 +28,7 @@ const DisplayExploreResult = (props) => {
         :
         (props.noResult) ? 
         <div className="no-result-div">
-          <p className='no-result'>No result found :(</p>
+          <p className='no-result'>No result found 😔</p>
         </div>
         :
         <></>

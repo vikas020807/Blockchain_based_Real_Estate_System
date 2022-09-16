@@ -25,6 +25,9 @@ const Navbar = (props) => {
                 <NavLink className="nav-link" exact activeClassName="active" to="/userprofile/">Profile<span className="sr-only">(current)</span></NavLink>
             </li>
             <li className="nav-item">
+                <NavLink className="nav-link" exact activeClassName="active" to="/" onClick={() => setActive(false)}>Wallet</NavLink>
+            </li>
+            <li className="nav-item">
                 <NavLink className="nav-link" exact activeClassName="active" to="/userprofile/property" onClick={() => setActive(false)}>Property</NavLink>
             </li>
             <li className="nav-item">
@@ -42,9 +45,10 @@ const Navbar = (props) => {
 
   return (
     <div>
+
         <nav className="navbar navbar-expand-lg navbar-light bg-light" >
             <NavLink to='/'>
-                <img src={emblem} alt="emblem" className="emblem"/>
+              <img src={emblem} alt="logo" className="emblem"/>
             </NavLink>
             <h3>{props.isAdmin ? "Admin" : ""}</h3>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -56,6 +60,7 @@ const Navbar = (props) => {
                 </ul>
             </div>
         </nav>
+       
     </div>
   )
 }

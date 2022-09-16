@@ -119,7 +119,7 @@ const Profile = (props) => {
               <label><b>Contact Number</b></label>
               <p>{userInfo.contact}</p>
 
-              <label><b>Resindential Address</b></label>
+              <label><b>Residential Address</b></label>
               <p>{userInfo.residential_addr}</p>
           </div>
         </div>

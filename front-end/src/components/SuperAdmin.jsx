@@ -3,6 +3,8 @@ import emblem from '../images/emblem.svg'
 import '../css/SuperAdmin.css'
 import { NavLink } from 'react-router-dom';
 
+
+
 const SuperAdmin = (props) => {
 
   const { provider, web3, contract } = props.myWeb3Api;
@@ -11,6 +13,7 @@ const SuperAdmin = (props) => {
   const [adminData, setAdminData] = useState({
     address:"", state:"", district:"", city:""
   });
+
 
   const onChangeFunc = (event) =>{
     const {name, value} = event.target;
@@ -25,8 +28,7 @@ const SuperAdmin = (props) => {
     console.log('admin details submitted');
     setAdminData({address:"", state:"", district:"", city:""});
   }
-
-
+ 
   return (
     <div className='container superAdmin-mainDiv'>
       <div className='superAdmin-heading-div'>
@@ -46,8 +48,8 @@ const SuperAdmin = (props) => {
         </div>
         <div className='form-group'>
             <label>State</label>
-            <input type="text" className="form-control" name="state" placeholder="Enter state" 
-            autoComplete="off" value={adminData.state} onChange={onChangeFunc}/>
+            <input type="text" className="form-control" name="state"  placeholder="Enter state" 
+            autoComplete="off" value={adminData.state} onChange={onChangeFunc}  />
         </div>
         <div className='form-group'>
             <label>District</label>

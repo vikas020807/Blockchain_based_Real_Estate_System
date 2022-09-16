@@ -8,7 +8,7 @@ import {loadContract} from './utils/loadContract';
 import SuperAdmin from './components/SuperAdmin';
 import Admin from './components/Admin';
 import UserProfile from './components/UserProfile';
-
+import Typed from 'react-typed'
 
 function App() {
 
@@ -38,8 +38,9 @@ function App() {
         })
     }
     else{
-        window.alert('😔Please install metamask!');  // metamask not detected.
+        alert('😔Please install metamask!');  // metamask not detected.
     }
+
 
 }
 
@@ -75,7 +76,21 @@ useEffect(() =>{
     account && checkAccount();
 }, [web3Api, account])
 
+// const animation = async ()=>{
+//   var content = 'Connect, View, Transfer, Buy, Sell, Land, all at one place.';
 
+//   var ele = '<span>' + content.split('').join('</span><span>') + '</span>';
+  
+  
+//   (ele).hide().appendTo('welcome-p').each(function (i) {
+//       (this).delay(100 * i).css({
+//           display: 'inline',
+//           opacity: 0
+//       }).animate({
+//           opacity: 1
+//       }, 100);
+//   });
+// }
   return (
     <Routes>
 
@@ -87,13 +102,26 @@ useEffect(() =>{
       <div className="App">
           <div className='container mainDiv'>
                 <div className='landingPage-heading-div'>
-                    <img src={emblem} alt="emblem" className="emblem" />
-                    <h1>Decentralized Land Registration</h1>
+                    <img src={emblem} alt="emblem" className="emblem-" />
+                    <h1 className='title'>BlockState<h6>Blockchain Based Real Estate</h6></h1>
                 </div>
 
-                <p className='welcome-p'>Welcome to online Land Registration and transfer of entitlement</p>
-
-                <button className='landingPage-btn' onClick={connectToEthereum}>Connect to Ethereum</button>
+                <div className='welcome-box'>
+                  <p className='welcome-p'>
+                    <Typed
+          strings={[
+            "Connect, View, Transfer,",
+            "Buy, Sell Land,",
+            "all at one place."
+          ]}
+          typeSpeed={100}
+          backSpeed={10}
+          loop
+        /></p>
+                </div>
+                <div className='button-container-div'>  
+                  <button className='landingPage-btn' onClick={connectToEthereum}>Connect Wallet</button>
+                </div>           
             </div>
         </div>
       }/>
